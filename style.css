@@ -1,0 +1,46 @@
+#gameboard {
+    width: 640px;
+    height: 640px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.square {
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+
+
+.piece img {
+    pointer-events: none;
+    
+}
+
+.legal-move::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    /* border: 10px solid black; */
+    border-radius: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.532);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.beige {
+    background-color: rgb(110, 110, 98);
+}
+
+.brown {
+    background-color: rgb(169, 43, 43);
+}
+
+.hide {
+    display: none;
+}
+
